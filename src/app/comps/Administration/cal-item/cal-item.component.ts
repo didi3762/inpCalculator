@@ -21,9 +21,7 @@ export class CalItemComponent implements OnInit {
     
   }
 
-  constructor() { 
-   
-  }
+  constructor() { }
 
   ngOnInit(): void {
 
