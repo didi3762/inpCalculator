@@ -1,0 +1,21 @@
+<h1>Wellcome to Calculator</h1>
+
+<div class="flex" [style.background]="bgRND">
+    <ul class="force-item">
+        <cal-item 
+                [client]="client"
+                *ngFor="let client of clientsArr" 
+                class="client-list"
+
+                (clickNote)="selected = client"
+                (dbclickNote)="selected = client"
+                (deleteNote)="deleteClient($event)"
+                (rendomColor)="bgRND = $event"
+                >{{client.name}}
+            </cal-item>
+    </ul>
+
+    <cal-details [client]="selected"></cal-details>
+
+</div>
+

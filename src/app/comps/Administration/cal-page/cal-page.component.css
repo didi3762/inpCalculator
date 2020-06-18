@@ -1,0 +1,9 @@
+.client-list{
+    display: list-item;
+}
+.force-item{
+    width: 40%;
+}
+.flex{
+    display: flex;
+}

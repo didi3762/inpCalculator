@@ -1,0 +1,12 @@
+
+<div 
+*ngIf='client' 
+[attr.clientId]="client.id" 
+[class]="'client-item' + (client.isPositive ? ' positive':'')"
+>
+    <h3>{{client.name}}</h3>
+    <label-span label="sum" [val]="client.sum"></label-span>
+    <label-span label="color" [val]="client.color"></label-span>
+
+</div>
+
